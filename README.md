@@ -52,7 +52,7 @@ Request
 ```bash
 curl --location 'http://127.0.0.1:8080/create-wallet' \
 --header 'Content-Type: application/json' \
---request POST
+--request GET
 ```
 Response
 ```json
