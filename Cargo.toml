@@ -1,0 +1,27 @@
+[package]
+name = "miden-poc-v06"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+uuid = { version = "1.10", features = ["serde", "v4"] }
+
+[dependencies]
+actix-web = "4"
+clap = { version = "4.5.20", features = ["derive"] }
+miden-client = { version = "0.6", features = ["testing", "concurrent", "sqlite", "tonic"] }
+rand = "0.8" # required for random number generation
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1.10", features = ["serde", "v4"] }
+serde = { version = "1.0", features = ["derive"] }
+tonic = { version = "0.11" }
+figment = { version = "0.10", features = ["toml", "env"] }
+toml = { version = "0.8" }
+comfy-table = { version = "7.1" }
+serde_json = { version = "1.0", features = ["raw_value"] }
+tracing-subscriber = { version = "0.3" }
+tracing = "0.1"
+actix-cors = "0.6"
+futures = "0.3"
+thiserror = "1.0"
+
