@@ -142,7 +142,7 @@ Response
 
 
 ## Get Accounts
-**Endpoint:** `POST /accounts`
+**Endpoint:** `GET /accounts`
 
 Fetches all existing accounts with associated balance.
 
